@@ -30,46 +30,151 @@
     width: 100vw;
     height: 100vh;
     content: "";
-    opacity: .03;  
+    opacity: .04;  
     z-index: 1000;
     pointer-events: none;
     background: url(../assets/noise.gif) ;
 }
 
-li {
-    display: inline;
-    margin-left: 5px;
-    transition: color .05s;
-    cursor: pointer;
+ul{
+    background-color: black;
+    border: 1px;
+    border-color: white;
 }
 
-li:hover {
+li {
+    background-color: black;
+    border: 1px solid white;
+    border-color: white;
+    border-style: solid;
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 16px;
+    display: inline;
+    margin-left: 5px;
+    transition: color .03s;
+    transition: background-color 0.3s;
+    cursor: pointer;
     color: white;
 }
 
-.nav-items {
+li:hover {
+    color: black;
+    background-color: white;
+}
+
+header {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
     display: flex;
     align-items: center;
     position: relative;
     justify-content: space-between;
-    padding: 10px;
-    font-family: Arial, Helvetica, sans-serif;
     letter-spacing: 5px;
-    color: 	rgb(204, 48, 62);
-    font-size: 16px;
-    font-weight: 700;
-    background-color: rgba(0, 0, 0, .9)
-    
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 1)
 }
+
+@media only screen and (max-width: 710px) {
+    header nav {
+      display: none;
+    }
+}
+
+#hamburger-icon {
+    margin: auto 0;
+    display: none;
+    cursor: pointer;
+  }
+  
+  #hamburger-icon div {
+    width: 35px;
+    height: 3px;
+    background-color: white;
+    margin: 6px 0;
+    transition: 0.4s;
+  }
+
+  .open .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-6px, 6px);
+    transform: rotate(-45deg) translate(-6px, 6px);
+  }
+  
+  .open .bar2 {
+    opacity: 0;
+  }
+  
+  .open .bar3 {
+    -webkit-transform: rotate(45deg) translate(-6px, -8px);
+    transform: rotate(45deg) translate(-6px, -8px);
+  }
+  
+  .open .mobile-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  
+  .mobile-menu {
+    display: none;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    height: calc(100vh - 50px);
+    width: 100%;
+  }
+
+.time {
+    background-image: linear-gradient(45deg, #f3ec78, #ffffff);
+    background-size: 100%;
+    padding: 3px;
+    padding-left: 5px;
+    padding-right: 5px;
+    -webkit-text-fill-color: black; 
+    -moz-text-fill-color: transparent;
+    border: 2px solid white;
+    border-radius: 20px;
+}
+
+.welcome {
+    color: white;
+    padding-left: 20px;
+}
+
+.welcome-gradient-container {
+    display: flex;
+    align-items: center;
+}
+
+.toggle-button {
+    position: absolute;
+    top: .75rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+
+.toggle-button .bar {
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+}
+
+
 
 .entrance {
     font-family: schabo;
-    font-size: 30vw;
+    font-size: 24vw;
     color: rgb(233, 211, 150);
 }
 
 .first {
-    
     line-height: .59;
     margin: 0;
     padding-top: .3em;
@@ -78,7 +183,6 @@ li:hover {
 }
 
 .last {
-    
     line-height: 1;
     margin: 0;
     padding-left: 70px;
@@ -91,21 +195,22 @@ li:hover {
     background-color: white;
     background-image: url("../assets/background.png");
     background-size: cover;
-    background-blend-mode: luminosity;
 }
 
-.intro {
+.desc {
     background-color: rgb(233, 211, 150);
     font-family: monument;
     color: rgb(37, 43, 37);
     font-weight: 800;
-    padding-top: 50px;
-    padding-bottom: 50px;
-    text-align: center;
+    font-size: 1vw;
+    text-align: right;
+    padding-right: 4em;
     letter-spacing: 3px;
+    padding-top: 3vw;
+    padding-bottom: 3vw;
 }
 
-.box-intro {
+.intro {
     background-color: rgb(233, 211, 150);
     font-family: monument;
     color: rgb(51, 51, 51);
@@ -125,7 +230,12 @@ li:hover {
 .abstract {
     position: absolute;
     width: 30vw;
-    top: -15vw;
+    top: -14vw;
     right: 10vw;
     z-index: 2;
+}
+
+.about {
+    margin-top: 100px;
+    background-color: red;
 }

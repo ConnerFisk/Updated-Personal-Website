@@ -9,21 +9,34 @@
 </head>
 <body>
     <div class="background noise">
-        <nav class="nav-bar">
-            <div class="nav-items">
-                <p>WELCOME</p>
+        <header>
+            <div class="welcome-gradient-container">
+                <p id="time" class="time"></p>
+                <p class="welcome">WELCOME</p>
+            </div>
+            <nav class="nav-bar">
                 <ul>
                     <li>ABOUT</li>
                     <li>PROJECTS</li>
                     <li>CONTACT</li>
                 </ul>
-            </div>
-        </nav>
+            </nav>
+            <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+                <ul class="mobile-menu">
+                  <li>ABOUT</li>
+                  <li>PROJECTS</li>
+                  <li>CONTACT</li>
+                </ul>
+              </div>
+        </header>
         <div class="entrance">
             <p class="first">
                     CONNER
             </p>
-            <p class="box-intro">
+            <p class="intro">
                 SOFTWARE ENGINEER >> COMPUTER SCIENCE STUDENT
             </p>
             <div class="horizontal">
@@ -33,9 +46,29 @@
                 <img class="abstract" src="/assets/abstract3.png" alt="">
             </div>
         </div>
+        <div class="desc">
+            UNIVERSITY OF UTAH HONORS COLLEGE | COMPUTER SCIENCE MAJOR | FINTECH MINOR
+        </div>
     </div>
-    <div class="intro">
-        SOFTWARE ENGINEER >> COMPUTER SCIENCE STUDENT
+    <p class="about-title entrance">
+        ABOUT
+    </p>
+    <div class="about">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid ab ea ipsa dignissimos nemo sunt odio tempora quisquam voluptatem placeat? Impedit omnis rem ratione molestiae alias consequatur quis iure doloremque.
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam rem, repudiandae, eveniet ab omnis blanditiis nulla voluptas fugit nam, harum alias nesciunt vitae natus repellendus. Vitae perferendis molestiae et facere.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga ipsum corporis ducimus eius architecto velit fugit magnam, esse earum ratione sed laudantium voluptatem assumenda odio quos consequatur incidunt deserunt doloremque.
     </div>
+
+    <script>
+        let time = document.getElementById("time");
+
+        let d = new Date()
+        time.innerHTML = d.toLocaleTimeString(undefined, {timeStyle:'short'});
+
+        setInterval(() =>{
+            d = new Date()
+            time.innerHTML = d.toLocaleTimeString(undefined, {timeStyle:'short'});
+        }, 60000);  
+    </script>
 </body>
 </html>
