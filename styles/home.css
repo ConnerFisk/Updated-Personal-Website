@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+}
+
+@font-face {
+    font-family: 'schabo';
+    src: url(../fonts/SCHABO-Condensed.otf);
+}
+
+@font-face {
+    font-family: 'damn';
+    src: url(../fonts/DAMN.otf);
+}
+
+@font-face {
+    font-family: 'ppair';
+    src: url(../fonts/PPAir-BlackMono.otf);
+}
+
+@font-face {
+    font-family: 'monument';
+    src: url(../fonts/MonumentExtended-Regular.otf);
+}
+
+.nav-items {
+    display: flex;
+    align-items: center;
+    position: relative;
+    justify-content: space-between;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 5px;
+    color: 	rgb(204, 48, 62);
+    font-size: 25px;
+    font-weight: 700;
+    background-color: white;
+    background-blend-mode:hue;
+}
+
+ul {
+
+}
+
+li {
+    display: inline;
+    margin-left: 5px;
+}
+
+.entrance {
+    font-family: schabo;
+    font-size: 30vw;
+    line-height: 25vw;
+    color: rgb(233, 211, 150);
+}
+
+.first {
+    padding-top: 100px;
+}
+
+.last {
+    padding-left: 70px;
+}
+
+.background {
+    background-color: white;
+    background-image: url("../assets/background.png");
+    background-size: cover;
+    background-blend-mode: luminosity;
+}
+
+.intro {
+    background-color: rgb(233, 211, 150);
+    font-family: monument;
+    color: rgb(37, 43, 37);
+    font-weight: 800;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    text-align: center;
+    letter-spacing: 3px;
+}
+
+.box-intro {
+    background-color: green;
+    font-size: 24px;
+    display: absolute;
+    height: 30px;
+    line-height: normal;
+}
+
+.horizontal-1 {
+    display: inline;
+    position: relative;
+}
+
+.horizontal-2 {
+    display: inline;
+    position: relative;
+}
+
+.abstract {
+    position: absolute;
+    width: 30vw;
+    top: -15vw;
+    right: 10vw;
+    z-index: 2;
+}
