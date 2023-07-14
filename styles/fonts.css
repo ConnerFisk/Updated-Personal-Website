@@ -1,11 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans+Condensed:wght@400;500;600;700&family=Poppins:wght@400;500;600;700;800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans+Condensed:wght@400;500;600;700&family=Poppins:wght@400;500;600;700;800&display=swap");
 
 @font-face {
-    font-family: 'schabo';
-    src: url(../fonts/SCHABO-Condensed.otf);
+  font-family: "schabo";
+  src: url(../fonts/SCHABO-Condensed.otf);
 }
 
 @font-face {
-    font-family: 'monument';
-    src: url(../fonts/MonumentExtended-Regular.otf);
+  font-family: "monument";
+  src: url(../fonts/MonumentExtended-Regular.otf);
 }

@@ -1,291 +1,290 @@
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
-html,body
-{
-    width: 100%;
-    height: 100%;
-    margin: 0px;
-    padding: 0px;
-    overflow-x: hidden; 
-    scroll-behavior: smooth;
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
-.noise::before{
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    content: "";
-    opacity: .05;  
-    z-index: 1000;
-    pointer-events: none;
-    background: url(../assets/noise.gif) ;
+.noise::before {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  content: "";
+  opacity: 0.05;
+  z-index: 1000;
+  pointer-events: none;
+  background: url(../assets/noise.gif);
 }
 
 .fancy {
-    font-family: argelha;
-    font-size: 2vw;
+  font-family: argelha;
+  font-size: 2vw;
 }
 
 .fancy-big {
-    font-family: argelha;
+  font-family: argelha;
 }
 
 .contact-type {
-    background-color: rgb(7, 7, 7);
-    color: white;
-    font-family: schabo;
-    font-size: calc(20vw);
+  background-color: rgb(7, 7, 7);
+  color: white;
+  font-family: schabo;
+  font-size: calc(20vw);
 }
 
 .contact-subtext {
-    font-size: 16px;
-    font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .entrance {
-    margin-top: 65px;
-    font-family: schabo;
-    font-size: calc(24vw + 100px);
-    color: rgb(233, 211, 150);
+  margin-top: 65px;
+  font-family: schabo;
+  font-size: calc(24vw + 100px);
+  color: rgb(233, 211, 150);
 }
 
 .first {
-    line-height: .59;
-    margin: 0;
-    padding-top: .3em;
-    border: none;
-    vertical-align: bottom;
+  line-height: 0.59;
+  margin: 0;
+  padding-top: 0.3em;
+  border: none;
+  vertical-align: bottom;
 }
 
-.project-grid{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+.project-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 
 .project-container {
-    background-color: white;
-    font-family: IBM Plex Sans Condensed;
-    font-size: calc(12px + .3vw);
-    font-weight: 600;
-    width: 1fr;
-    padding: 3vw;
-    margin-left: 7px;
-    margin-right: 7px;
-    margin-bottom: -3vw;
-    background: linear-gradient(white, white) padding-box,
-                linear-gradient(45deg, rgb(233, 211, 150), rgb(233, 211, 150)) border-box;
-    border-radius: 3em;
-    border: calc(3px + .2em) solid transparent;
+  background-color: white;
+  font-family: IBM Plex Sans Condensed;
+  font-size: calc(12px + 0.3vw);
+  font-weight: 600;
+  width: 1fr;
+  padding: 3vw;
+  margin-left: 7px;
+  margin-right: 7px;
+  margin-bottom: -3vw;
+  background: linear-gradient(white, white) padding-box,
+    linear-gradient(45deg, rgb(233, 211, 150), rgb(233, 211, 150)) border-box;
+  border-radius: 3em;
+  border: calc(3px + 0.2em) solid transparent;
 }
 
 .project-title {
-    margin: 0;
-    padding: 0;
-    font-family: schabo;
-    letter-spacing: 3px;
-    font-size: calc(80px + .5vw);
-    color: rgb(233, 211, 150);
-    white-space: normal !important;
-    overflow: visible !important;
-    word-break: break-word;
+  margin: 0;
+  padding: 0;
+  font-family: schabo;
+  letter-spacing: 3px;
+  font-size: calc(80px + 0.5vw);
+  color: rgb(233, 211, 150);
+  white-space: normal !important;
+  overflow: visible !important;
+  word-break: break-word;
 }
 
 .project-info {
-    color: rgb(7, 7, 7);
-    font-family: IBM Plex Sans Condensed;
-    font-weight: 800;
-    letter-spacing: 2px;
-    font-size: calc(14px + .3vw);
+  color: rgb(7, 7, 7);
+  font-family: IBM Plex Sans Condensed;
+  font-weight: 800;
+  letter-spacing: 2px;
+  font-size: calc(14px + 0.3vw);
 }
 
 .project-description {
-    color: rgb(7, 7, 7);
-    font-family: IBM Plex Sans Condensed;
-    font-weight: 600;
-    letter-spacing: normal;
+  color: rgb(7, 7, 7);
+  font-family: IBM Plex Sans Condensed;
+  font-weight: 600;
+  letter-spacing: normal;
 }
 
 .last {
-    line-height: 1;
-    margin: 0;
-    border: none;
-    margin-top: -3px;
-    vertical-align: top;
+  line-height: 1;
+  margin: 0;
+  border: none;
+  margin-top: -3px;
+  vertical-align: top;
 }
 
 .section {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .placeholder-container {
-    background-color: white;
-    text-align: center;
-    vertical-align: middle;
-    font-family: IBM Plex Sans Condensed;
-    font-size: calc(12px + .3vw);
-    font-weight: 600;
-    width: 1fr;
-    padding: 3vw;
-    margin-left: 7px;
-    margin-right: 7px;
-    margin-bottom: -3vw;
-    background: linear-gradient(white, white) padding-box,
-                linear-gradient(45deg, rgb(233, 211, 150), rgb(233, 211, 150)) border-box;
-    border-radius: 3em;
-    border: calc(3px + .2em) solid transparent;
+  background-color: white;
+  text-align: center;
+  vertical-align: middle;
+  font-family: IBM Plex Sans Condensed;
+  font-size: calc(12px + 0.3vw);
+  font-weight: 600;
+  width: 1fr;
+  padding: 3vw;
+  margin-left: 7px;
+  margin-right: 7px;
+  margin-bottom: -3vw;
+  background: linear-gradient(white, white) padding-box,
+    linear-gradient(45deg, rgb(233, 211, 150), rgb(233, 211, 150)) border-box;
+  border-radius: 3em;
+  border: calc(3px + 0.2em) solid transparent;
 }
 
 .placeholder {
-    width: 300px;
+  width: 300px;
 }
 
-.about-title{
-    line-height: 1;
-    margin: 0;
-    text-align: right;
-    display: inline;
-    border: none;
-    margin-top: -3px;
-    vertical-align: top;
-    color: white;
+.about-title {
+  line-height: 1;
+  margin: 0;
+  text-align: right;
+  display: inline;
+  border: none;
+  margin-top: -3px;
+  vertical-align: top;
+  color: white;
 }
 
 .background {
-    background-color: white;
-    background-image: url("../assets/background.png");
-    background-size: cover;
-    
+  background-color: white;
+  background-image: url("../assets/background.png");
+  background-size: cover;
 }
 
 .right-text-bar {
-    background-color: rgb(233, 211, 150);
-    font-family: monument;
-    color: rgb(7, 7, 7);
-    font-weight: 800;
-    font-size: calc(.2vw + 8px);
-    text-align: right;
-    padding-right: 4em;
-    letter-spacing: 3px;
-    padding-top: 3vw;
-    padding-bottom: 3vw;
-    position: relative;
-    z-index: 3;
+  background-color: rgb(233, 211, 150);
+  font-family: monument;
+  color: rgb(7, 7, 7);
+  font-weight: 800;
+  font-size: calc(0.2vw + 8px);
+  text-align: right;
+  padding-right: 4em;
+  letter-spacing: 3px;
+  padding-top: 3vw;
+  padding-bottom: 3vw;
+  position: relative;
+  z-index: 3;
 }
 
 .left-text-bar {
-    background-color: rgb(233, 211, 150);
-    font-family: monument;
-    color: rgb(7, 7, 7);
-    font-weight: 800;
-    padding-top: 3vw;
-    position: relative;
-    padding-bottom: 3vw;
-    padding-left: 4em;
-    letter-spacing: 3px;
-    font-size: calc(.2vw + 8px);
-    z-index: 3;
+  background-color: rgb(233, 211, 150);
+  font-family: monument;
+  color: rgb(7, 7, 7);
+  font-weight: 800;
+  padding-top: 3vw;
+  position: relative;
+  padding-bottom: 3vw;
+  padding-left: 4em;
+  letter-spacing: 3px;
+  font-size: calc(0.2vw + 8px);
+  z-index: 3;
 }
 
-.about-container{
-    display: inline;
-    position: relative;
+.about-container {
+  display: inline;
+  position: relative;
 }
 
 .section {
-    background-color: rgb(7, 7, 7);
+  background-color: rgb(7, 7, 7);
 }
 
 .horizontal {
-    display: inline;
-    position: relative;
+  display: inline;
+  position: relative;
 }
 
 .abstract {
-    position: absolute;
-    width: 30vw;
-    top: -14vw;
-    right: 10vw;
-    z-index: 2;
+  position: absolute;
+  width: 30vw;
+  top: -14vw;
+  right: 10vw;
+  z-index: 2;
 }
 
-.abstract-2{
-    position: absolute;
-    width: 40vw;
-    left: -10vw;
-    z-index: 2;
+.abstract-2 {
+  position: absolute;
+  width: 40vw;
+  left: -10vw;
+  z-index: 2;
 }
 
 .about {
-    background-color: rgb(7, 7, 7);
-    font-family: IBM Plex Sans Condensed;
-    font-size: calc(12px + .3vw);
-    font-weight: 600;
-    width: 66%;
-    padding: 5vw;
-    margin-left: 10px;
-    margin-bottom: 10px;
-    color: rgb(233, 211, 150);
-    border-radius: 3em;
-    border: calc(3px + .2em) solid rgb(233, 211, 150);
+  background-color: rgb(7, 7, 7);
+  font-family: IBM Plex Sans Condensed;
+  font-size: calc(12px + 0.3vw);
+  font-weight: 600;
+  width: 66%;
+  padding: 5vw;
+  margin-left: 10px;
+  margin-bottom: 10px;
+  color: rgb(233, 211, 150);
+  border-radius: 3em;
+  border: calc(3px + 0.2em) solid rgb(233, 211, 150);
 }
 
-a:link, a:visited, a:active, a:hover {
-    color: rgb(233, 211, 150);
-    text-decoration: none;
+a:link,
+a:visited,
+a:active,
+a:hover {
+  color: rgb(233, 211, 150);
+  text-decoration: none;
 }
 
 .music-creds {
-    position: absolute;
-    background-color: rgb(233, 211, 150);
-    border: 2px solid rgb(7, 7, 7);
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: 700;
-    width: 10vw;
-    letter-spacing: 3px;
-    font-size: 1vw;
-    border-radius: 10px;
-    padding: 3px;
-    margin: 7px;
+  position: absolute;
+  background-color: rgb(233, 211, 150);
+  border: 2px solid rgb(7, 7, 7);
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  width: 10vw;
+  letter-spacing: 3px;
+  font-size: 1vw;
+  border-radius: 10px;
+  padding: 3px;
+  margin: 7px;
 }
 
 .music-name {
-    color: white;
-    font-weight: 400;
-    letter-spacing: 2px;
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: rgb(7, 7, 7);
-    text-align: center;
-    font-size: 12px;
-    padding-bottom: 20px;
+  color: white;
+  font-weight: 400;
+  letter-spacing: 2px;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: rgb(7, 7, 7);
+  text-align: center;
+  font-size: 12px;
+  padding-bottom: 20px;
 }
 
 @media only screen and (max-width: 900px) {
-    .project-grid{
-        grid-template-columns: 1fr;
-    }
+  .project-grid {
+    grid-template-columns: 1fr;
+  }
 }
 
 @media only screen and (max-width: 500px) {
-    .entrance {
-        font-size: 40vw;
-    }
+  .entrance {
+    font-size: 40vw;
+  }
 
-    .project-title{
-        font-size: 10vw;
-    }
+  .project-title {
+    font-size: 10vw;
+  }
 }
 
 @media only screen and (max-width: 340px) {
-    .placeholder {
-        width: 50%;
-    }
+  .placeholder {
+    width: 50%;
+  }
 }
-
-
-
