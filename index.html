@@ -210,11 +210,12 @@
         
     </div>
     <script>
+        // Get the HTML element that should be changed with the time.
         let time = document.getElementById("time");
-
+        // Set the current time in the HTML element.
         let d = new Date()
         time.innerHTML = d.toLocaleTimeString(undefined, {timeStyle:'short'});
-
+        // Update the time every 60 seconds.
         setInterval(() =>{
             d = new Date()
             time.innerHTML = d.toLocaleTimeString(undefined, {timeStyle:'short'});
