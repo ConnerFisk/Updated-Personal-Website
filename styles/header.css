@@ -1,8 +1,4 @@
-ul{
-    background-color: rgb(7, 7, 7);
-    border: 1px;
-    border-color: white;
-}
+
 
 li {
     background-color: rgb(7, 7, 7);
@@ -21,21 +17,46 @@ li {
     color: white;
 }
 
-li:hover {
-    color: rgb(7, 7, 7);
+.nav-element:hover {
+    color: rgb(7, 7, 7) !important;
     background-color: white;
 }
 
 header {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 700;
     display: flex;
     align-items: center;
-    position: relative;
     justify-content: space-between;
     letter-spacing: 5px;
     padding: 20px;
-    background-color: rgb(7, 7, 7)
+    background-color: rgb(7, 7, 7);
+    z-index: 5;
+}
+
+.nav-bar{
+    color: white;
+}
+
+.nav-element {
+    background-color: rgb(7, 7, 7);
+    border: 1px solid white;
+    border-color: white;
+    border-style: solid;
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 16px;
+    display: inline;
+    margin-left: 5px;
+    transition: color .03s;
+    transition: background-color 0.3s;
+    cursor: pointer;
+    color: white !important;
 }
 
 #hamburger-icon {
@@ -88,6 +109,7 @@ header {
     width: 100%;
     z-index: 4;
     margin-top: 10px;
+    background-color: rgb(7, 7, 7);
 }
 
 .toggle-button {
@@ -144,5 +166,30 @@ header {
 
     #hamburger-icon {
         display: block;
+    }
+}
+
+@media only screen and (max-width: 374px) {
+    header nav {
+        display: none;
+    }
+
+    header {
+        font-size: 3vw;
+    }
+
+    #icon {
+        width: 20px;
+        margin-right: 10px;
+    }
+
+    #hamburger-icon {
+        display: block;
+    }
+}
+
+@media only screen and (max-width: 288px) {
+    header {
+        font-size: 1.5vw;
     }
 }

@@ -37,9 +37,9 @@
             </div>
             <nav class="nav-bar">
                 <ul>
-                    <li>ABOUT</li>
-                    <li>PROJECTS</li>
-                    <li>CONTACT</li>
+                    <a class="nav-element" href="#about">ABOUT</a>
+                    <a class="nav-element" href="#projects">PROJECTS</a>
+                    <a class="nav-element" href="#contact">CONTACT</a>
                 </ul>
             </nav>
             <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
@@ -47,9 +47,9 @@
                 <div class="bar2"></div>
                 <div class="bar3"></div>
                 <ul class="mobile-menu">
-                  <li class="hamburger-options">ABOUT</li>
-                  <li class="hamburger-options">PROJECTS</li>
-                  <li class="hamburger-options">CONTACT</li>
+                    <a class="nav-element hamburger-options" href="#about">ABOUT</a>
+                    <a class="nav-element hamburger-options" href="#projects">PROJECTS</a>
+                    <a class="nav-element hamburger-options" href="#contact">CONTACT</a>
                 </ul>
               </div>
         </header>
@@ -71,30 +71,146 @@
             UNIVERSITY OF UTAH | COMPUTER SCIENCE MAJOR | FINTECH MINOR
         </div>
     </div>
-    <div class="section">
-        <div class="about">
-            Hi, I'm <b>Conner</b>. Nice to meet you.
-            <br>
-            I'm an undergraduate student in the <b>University of Utah's Honors College</b> majoring in <b>Computer Science</b> with a minor in <b>Fintech</b>. 
-            I'm a <b>junior</b> on track to graduate on <b>May 2, 2025</b> currently looking for internships to further my knowledge and get hands-on experience. 
-            For more information, take a look at my <b><a href="https://drive.google.com/file/d/1znEqjuqBzlKxsC4Dp84fo4v6yMf5JoI-/view" target="_blank">resume</a></b>.
+    <div class="about-container" id="about">
+        <img class="abstract-2" src="/assets/abstract4.png" alt="">
+        <div class="section">
+            <p class="about-title entrance">
+                ABOUT
+            </p>
+            <div class="about">
+                Hi, I'm <span style="color: white;">Conner</span>. Nice to meet you.
+                <br>
+                I'm an undergraduate student in the <span style="color: white;">University of Utah's Honors College</span> majoring in <span style="color: white;">Computer Science</span> 
+                with a minor in <span style="color: white;">Fintech</span>. I'm a <span style="color: white;">junior</span> on track to graduate on <span style="color: white;">May 2, 2025</span>
+                 currently looking for internships to further my knowledge and get hands-on experience. For more information, take a look at my 
+                 <b><a href="https://drive.google.com/file/d/1znEqjuqBzlKxsC4Dp84fo4v6yMf5JoI-/view" target="_blank"><span style="color: white;">resume</span></a></b>.
+            </div>
         </div>
-        <p class="about-title entrance">
-            ABOUT
-        </p>
     </div>
-    <div class="left-text-bar">
-            SKILLS & PROJECTS
+    <div class="left-text-bar" id="projects" style="margin-bottom: 7px;">
+            PROJECTS
+    </div>
+    <div class="project-grid">
+        <div class="project-container">
+            <a href="https://github.com/ConnerFisk/TravelEasy" target="_blank">
+                <p class="project-title">
+                    TRAVEL EASY
+                </p>
+                <p class="project-info">
+                    <b>Your personal travel guide</b> &#8226; React &#8226; <i>Click to view repository...</i>
+                </p>
+                <p class="project-description">
+                    Developed a dynamic travel application that displays attractions, hotels, and restaurants anywhere in the world. Created using React and utilized REST APIs 
+                    from Google and RapidAPIs in order to gain key skills with working with APIs.
+                </p>
+            </a>
         </div>
-    <div class="section">
-
+        <div class="project-container">
+                <p class="project-title">
+                    DUO ALGO
+                </p>
+                <p class="project-info">
+                    <b>Algorithmn Learning App</b> &#8226; C++, Qt
+                </p>
+                <p class="project-description">
+                    Developed an educaonal app in a group that walks through and teaches the user specific algorithms, then allows for the opportunity to prove their new knowledge 
+                    through a short quiz and interacve algorithm test. Further developed crucial skills for coding in a team, focusing on MVC soware design during our development process.
+                </p>
+        </div>
+        <div class="project-container">
+            <a href="https://github.com/ConnerFisk/TravelEasy" target="_blank">
+                <p class="project-title">
+                    LMS DATABASE WEB SERVER
+                </p>
+                <p class="project-info">
+                    MySQL, C#, .NET MAUI
+                </p>
+                <p class="project-description">
+                    Used MySQL to construct a relational database that holds all components of a college course management system. Utilized C#’s scaffolding and LINQ capabilities 
+                    to implement the backend of a web server to allow an administrator, professor, or student to view their needed data in an organised manner.
+                </p>
+            </a>
+        </div>
+        <div class="project-container">
+            <a href="https://github.com/ConnerFisk/TravelEasy" target="_blank">
+                <p class="project-title">
+                    SPREADSHEET APPLICATION
+                </p>
+                <p class="project-info">
+                    C#, .NET MAUI
+                </p>
+                <p class="project-description">
+                    Developed a spreadsheet application using C# and .NET MAUI which takes in various formulas, while keeping track of the necessary relationships between each 
+                    cell and formula, to calculate the user’s equations.
+                </p>
+            </a>
+        </div>
+        <div class="project-container">
+            <a href="https://github.com/ConnerFisk/TravelEasy" target="_blank">
+                <p class="project-title">
+                    MULTIPLAYER SNAKE GAME
+                </p>
+                <p class="project-info">
+                    <b>YOUR PERSONAL TRAVEL GUIDE</b> &#8226; REACT &#8226; <i>Click to view repository...</i>
+                </p>
+                <p class="project-description">
+                    Developed a snake-style mulplayer game using C# and .NET MAUI that allows mulple users to compete against each other on the same server, focusing on network 
+                    fundamentals, client-server protocol, and MVC design.
+                </p>
+            </a>
+        </div>
+        <div class="project-container">
+            <a href="https://github.com/ConnerFisk/TowerDefenseGame" target="_blank">
+                <p class="project-title">
+                    TOWER DEFENSE GAME
+                </p>
+                <p class="project-info">
+                    Java &#8226;<i>Click to view repository...</i>
+                </p>
+                <p class="project-description">
+                    Developed a snake-style mulplayer game using C# and .NET MAUI that allows mulple users to compete against each other on the same server, focusing on network 
+                    fundamentals, client-server protocol, and MVC design.
+                </p>
+            </a>
+        </div>
+        <div class="project-container">
+            <a href="https://github.com/ConnerFisk/Personal-Website" target="_blank">
+                <p class="project-title">
+                    PERSONAL WEBSITE
+                </p>
+                <p class="project-info">
+                    HTML, CSS, JavaScript &#8226;<i>Click to view repository...</i>
+                </p>
+                <p class="project-description">
+                    Developed the website you are currently on using HTML, CSS, and JavaScript.
+                </p>
+            </a>
+        </div>
+        <div class="placeholder-container">
+            <img class="placeholder" src="/assets/abstract5.png" alt="">
+        </div>
     </div>
-
-
-
-
-    <div class="music-creds">
-        song: yunè pinku - Jaws
+    <div class="right-text-bar" style="margin-top: 50px;">
+        CONTACT
+    </div>
+    <div class="contact-container" id="contact">
+        <a href="https://www.linkedin.com/in/connerfisk/" target="_blank">
+            <p class="contact-type">
+                LINKEDIN <span class="contact-subtext">VISIT MY PAGE...</span>
+            </p>
+        </a>
+        <a href="https://github.com/ConnerFisk" target="_blank">
+            <p class="contact-type">
+                GITHUB<span class="contact-subtext">VISIT MY GITHUB...</span>
+            </p>
+        </a>
+        <a href="mailto:fiskconner@gmail.com" target="_blank">
+            <p class="contact-type">
+                EMAIL<span class="contact-subtext">FISKCONNER@GMAIL.COM</span>
+            </p>
+        </a>
+        <p class="music-name">MUSIC &#8226; YUNÈ PINKU - JAWS</p>
+        
     </div>
     <script>
         let time = document.getElementById("time");
