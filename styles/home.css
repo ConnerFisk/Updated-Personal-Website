@@ -265,15 +265,19 @@ a:link, a:visited, a:active, a:hover {
     padding-bottom: 20px;
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 900px) {
     .project-grid{
         grid-template-columns: 1fr;
     }
 }
 
-@media only screen and (max-width: 465px) {
+@media only screen and (max-width: 500px) {
     .entrance {
         font-size: 40vw;
+    }
+
+    .project-title{
+        font-size: 10vw;
     }
 }
 
