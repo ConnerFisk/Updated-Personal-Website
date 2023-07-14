@@ -5,12 +5,33 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/home.css">
+    <link rel="stylesheet" href="styles/fonts.css">
+    <link rel="stylesheet" href="styles/header.css">
     <title>Conner Fisk</title>
 </head>
 <body>
     <div class="background noise">
         <header>
-            <div class="welcome-gradient-container">
+            <div class="music-welcome-gradient-container">
+                <img src="/assets/muted.png" id="icon">
+                <audio id="song" loop>
+                  <source src="assets/music.mp3" type="audio/mp3">
+                </audio>
+                <script>
+                  var song = document.getElementById("song")
+                  var icon = document.getElementById("icon")
+                  //This function will change the music icon and
+                  //play or pause the music when clicked.
+                  icon.onclick = function (){
+                    if(song.paused){
+                      song.play();
+                      icon.src="/assets/playing.png"
+                    }else{
+                      song.pause();
+                      icon.src="/assets/muted.png"
+                    }
+                  }
+                </script>
                 <p id="time" class="time"></p>
                 <p class="welcome">WELCOME</p>
             </div>
@@ -26,9 +47,9 @@
                 <div class="bar2"></div>
                 <div class="bar3"></div>
                 <ul class="mobile-menu">
-                  <li>ABOUT</li>
-                  <li>PROJECTS</li>
-                  <li>CONTACT</li>
+                  <li class="hamburger-options">ABOUT</li>
+                  <li class="hamburger-options">PROJECTS</li>
+                  <li class="hamburger-options">CONTACT</li>
                 </ul>
               </div>
         </header>
@@ -36,8 +57,8 @@
             <p class="first">
                     CONNER
             </p>
-            <p class="intro">
-                SOFTWARE ENGINEER >> COMPUTER SCIENCE STUDENT
+            <p class="left-text-bar">
+               SOFTWARE ENGINEER >> COMPUTER SCIENCE STUDENT
             </p>
             <div class="horizontal">
                 <p class="last">
@@ -46,19 +67,35 @@
                 <img class="abstract" src="/assets/abstract3.png" alt="">
             </div>
         </div>
-        <div class="desc">
-            UNIVERSITY OF UTAH HONORS COLLEGE | COMPUTER SCIENCE MAJOR | FINTECH MINOR
+        <div class="right-text-bar">
+            UNIVERSITY OF UTAH | COMPUTER SCIENCE MAJOR | FINTECH MINOR
         </div>
     </div>
-    <p class="about-title entrance">
-        ABOUT
-    </p>
-    <div class="about">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid ab ea ipsa dignissimos nemo sunt odio tempora quisquam voluptatem placeat? Impedit omnis rem ratione molestiae alias consequatur quis iure doloremque.
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam rem, repudiandae, eveniet ab omnis blanditiis nulla voluptas fugit nam, harum alias nesciunt vitae natus repellendus. Vitae perferendis molestiae et facere.
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga ipsum corporis ducimus eius architecto velit fugit magnam, esse earum ratione sed laudantium voluptatem assumenda odio quos consequatur incidunt deserunt doloremque.
+    <div class="section">
+        <div class="about">
+            Hi, I'm <b>Conner</b>. Nice to meet you.
+            <br>
+            I'm an undergraduate student in the <b>University of Utah's Honors College</b> majoring in <b>Computer Science</b> with a minor in <b>Fintech</b>. 
+            I'm a <b>junior</b> on track to graduate on <b>May 2, 2025</b> currently looking for internships to further my knowledge and get hands-on experience. 
+            For more information, take a look at my <b><a href="https://drive.google.com/file/d/1znEqjuqBzlKxsC4Dp84fo4v6yMf5JoI-/view" target="_blank">resume</a></b>.
+        </div>
+        <p class="about-title entrance">
+            ABOUT
+        </p>
+    </div>
+    <div class="left-text-bar">
+            SKILLS & PROJECTS
+        </div>
+    <div class="section">
+
     </div>
 
+
+
+
+    <div class="music-creds">
+        song: yunè pinku - Jaws
+    </div>
     <script>
         let time = document.getElementById("time");
 
@@ -70,5 +107,6 @@
             time.innerHTML = d.toLocaleTimeString(undefined, {timeStyle:'short'});
         }, 60000);  
     </script>
+    <script src="index.js"></script>
 </body>
 </html>

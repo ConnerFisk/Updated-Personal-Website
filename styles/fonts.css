@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+
+@font-face {
+    font-family: 'schabo';
+    src: url(../fonts/SCHABO-Condensed.otf);
+}
+
+@font-face {
+    font-family: 'damn';
+    src: url(../fonts/DAMN.otf);
+}
+
+@font-face {
+    font-family: 'ppair';
+    src: url(../fonts/PPAir-BlackMono.otf);
+}
+
+@font-face {
+    font-family: 'monument';
+    src: url(../fonts/MonumentExtended-Regular.otf);
+}
+
+@font-face {
+    font-family: 'sebastian';
+    src: url(../fonts/Sebastian.otf);
+}
+
+@font-face {
+    font-family: 'argelha';
+    src: url(../fonts/Argelha.otf);
+}
